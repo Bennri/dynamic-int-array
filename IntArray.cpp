@@ -29,10 +29,12 @@ IntArray::IntArray(IntArray&& arr) { // move constructor
 	arr.data = nullptr;
 }
 
+// get amount of stored values
 int IntArray::getLength(){
 	return length;
 }
 
+// not used yet
 int IntArray::getSize(){
 	return size;
 }
@@ -106,11 +108,14 @@ void IntArray::append(int value) {
 
 }
 
-
+// delete an element, not working with negative indices
 void IntArray::erase(int index) {
+	// start at index
+	// shift every value one position back
 	for (int i = index; i < length - 1; ++i) {
 		data[i] = data[i+1];
 	}
+	// decrease amount of stored values
 	length--;
 }
 

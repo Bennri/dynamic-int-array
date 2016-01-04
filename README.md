@@ -1,2 +1,2 @@
 # dynamic-int-array
-int array which increases size dynamic, if initial size is reached. Written in C++.
+int array which increases size dynamic, if initial size is reached. Compiler g++14.
